@@ -1,0 +1,105 @@
+----------------------------------------------------------------------------------------------------------------------------
+se ao tentar iniciar o idle der o erro -> ** IDLE can't import Tkinter.
+Your Python may not be configured for Tk. **
+
+
+baixar o pacote tk
+pacman -S tk
+------------------------------------------------------------------------------------------------------------------------------
+
+//para reconfigurar hd ou dispositivos ntfs
+sudo ntfsfix /dev/dispositivo
+ 
+
+------------------------------------------------------------------------------------------------------------------------------
+
+//instalar yay 
+endereço para clocar yay via 
+
+git clone https://aur.archlinux.org/yay.git
+ depois, compilar com makepkg
+
+------------------------------------------------------------------------------------------------------------------------------
+//mirrors necessarios
+ 
+[archlinuxfr]
+SigLevel = Never
+Server = http://repo.archlinux.fr/$arch
+
+
+
+
+[chaotic-aur]
+Server = https://lonewolf.pedrohlc.com/$repo/$arch
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+geralmente resolve problemas com chaves
+
+// atualizacao de chaves => pacman -S archlinux-keyring
+
+
+//inserir chaves manualmente
+sudo pacman-key --keyserver hkp://keyserver.ubuntu.com -r 3056513887B78AEB 8A9E14A07010F7E3
+$ sudo pacman-key --lsign-key 3056513887B78AEB
+
+
+sudo pacman-key --lsign-key 8A9E14A07010F7E3
+$ sudo pacman -Syy && sudo pacman -S archlinuxcn-keyring
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+//para poder usar o idle, 
+
+sudo pacman -S python-pmw
+
+-------------------------------------------------------------------------------------------------------------------------------
+//instalacao de impressoras
+pacotes necessariios abaixo
+sudo pacman -Syu  cups hplip system-config-printer sane s xsane ghostscript cups-pdf
+cups gutenprint cups-pdf gtk3-print-backendsnma
+
+precisa criar um grupo para a impressora -> sudo groupadd lpadmin
+presamos adcionar nosso usuario ao grupo -> sudo gpasswd -a $USER lpadmin
+depois habilitar iniciacao -> systemctl enable cups-browsed.service
+
+
+-----------------------------------------------------------------
+ao usar o opera no arch, quando o mesmo nao rodar videos normalmente, voce deve instalar a lib ffmpeg, disponivel no yay
+-> opera-ffmpeg-codecs 101.0.4951.67-1
+instalar, e depois reiniciar
+
+-----------------------------------------------------------------
+quando vscode estiver dando erro para entrar na conta do do usuario para sincronizar, basta baixar os pacotes -> gnome-keyring libsecret libgnome-keyring
+
+-----------------------------------------------------------------
+
+para desativar a carteira kde precisa usar o gerenciador de carteira
+
+sudo pacman -S kwalletmanager
+
+-------------------------------------------------
+
+melhor visualizador de imagem com a opcao de
+editar os arquivos gthumb
+
+
+--------------------------------------------------------------------------
+instalar o flhasheador para terminais b1811
+yay flash
+
+aur/spflashtool5-bin 5.2208-1
+SP Flash Tool is an application to flash your MediaTek (MTK) SmartPhone. Version 5 variant.
+
+
+
+
+
+
+
+
+
+
+

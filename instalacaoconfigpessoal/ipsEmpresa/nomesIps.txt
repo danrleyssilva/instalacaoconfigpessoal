@@ -1,0 +1,39 @@
+Lista de ips. 
+
+0.1 = Microtik
+102 = Disco
+152 = Recepcao
+
+Comercial 
+0.45 = Wagner 
+0.53= Impressora
+ 
+Financeiro
+0.126 = diana
+0.116 = Michele
+0.127 = chefa
+0.105 = Gabi
+
+Marketing 
+0.43 = ruan
+0.28 = Ariel
+0.34 = Jr
+0.135 = Paula
+
+Oficina
+0.54 = Jonas
+0.20 mufasa
+
+Mercado
+0.136 = William
+0.118 = diego
+
+Ponto = 150
+
+Recepção 
+0.08 = nair
+0.32 = fran
+
+roteadores
+0.151 = AM SORTE
+0.152 = RECEPCAO
