@@ -1,5 +1,0 @@
-para consigurar o dns, precisa ir no /etc/resolv.conf
-editar para o dns desejado e salvar
-
-para que o manager nao faca alteracoes apos salvar
-deve usar o chattr +i /etc/resolv.conf
